@@ -1,0 +1,129 @@
+/* =========================
+   CONTACTS PAGE
+========================= */
+
+:root {
+    --contacts-background: #fcf8f5;
+    --contacts-pink: #f8e9ef;
+    --contacts-burgundy: #5d1839;
+    --contacts-line: #c9afbc;
+}
+
+.contacts-page {
+    display: grid;
+    place-items: center;
+    min-height: calc(100vh - 10rem);
+    padding: 4rem 1.25rem;
+    background-color: var(--contacts-background);
+    background-image: url("../image/pattern_geometrico.png");
+    background-repeat: repeat;
+    background-size: 29rem;
+}
+
+.contact-card {
+    width: min(100%, 16rem);
+    background-color: var(--contacts-pink);
+}
+
+.contact-image-area {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 16rem;
+    background-color: var(--contacts-burgundy);
+}
+
+.contact-logo {
+    position: relative;
+    width: 8rem;
+    height: 6rem;
+    color: var(--contacts-background);
+    font-family: Georgia, serif;
+    font-size: 4.5rem;
+}
+
+.contact-logo span {
+    position: absolute;
+}
+
+.contact-logo span:first-child {
+    top: 0;
+    left: 0;
+}
+
+.contact-logo span:last-child {
+    right: 0;
+    bottom: 0;
+}
+
+.contact-content {
+    padding: 0.65rem 0.8rem 1rem;
+}
+
+.contact-content h2 {
+    margin: 0;
+    color: var(--contacts-burgundy);
+    font-size: 0.55rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-line {
+    height: 1px;
+    margin: 0.5rem 0 0.65rem;
+    background-color: var(--contacts-line);
+}
+
+.contact-list {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--contacts-burgundy);
+    font-size: 0.52rem;
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+    color: #a85d81;
+}
+
+.contact-link svg {
+    flex: 0 0 auto;
+    width: 0.85rem;
+    height: 0.85rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5;
+}
+
+.contact-link .instagram-dot {
+    fill: currentColor;
+}
+
+@media (max-width: 600px) {
+    .contacts-page {
+        padding: 3rem 1rem;
+        background-size: 21rem;
+    }
+
+    .contact-card {
+        width: min(100%, 18rem);
+    }
+
+    .contact-image-area {
+        height: 17rem;
+    }
+}
