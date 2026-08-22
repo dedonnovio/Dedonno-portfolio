@@ -1,0 +1,107 @@
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    min-height: 73px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 38px;
+
+    background-color: #64213f;
+
+    color: #ffffff;
+}
+
+
+/* Copyright */
+
+.copyright {
+    color: #ffffff;
+
+    font-size: 0.72rem;
+}
+
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.social-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.social-link {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-radius: 4px;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.social-link:hover {
+    opacity: 0.8;
+
+    transform: translateY(-2px);
+}
+
+
+.social-link svg {
+    width: 27px;
+    height: 27px;
+
+    fill: none;
+
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+}
+
+
+.instagram-dot {
+    fill: currentColor;
+
+    stroke: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE MOBILE
+========================================================= */
+
+@media (max-width: 550px) {
+
+    .site-footer {
+        padding: 0 20px;
+    }
+
+
+    .social-links {
+        gap: 18px;
+    }
+}

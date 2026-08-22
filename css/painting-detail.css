@@ -1,0 +1,285 @@
+/* =========================
+   PAINTING DETAIL PAGE
+========================= */
+
+:root {
+    --detail-background: #fcf8f5;
+    --detail-pink: #f8e9ef;
+    --detail-burgundy: #5d1839;
+    --detail-line: #c9afbc;
+    --detail-pattern: rgba(224, 209, 181, 0.38);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--detail-background);
+    color: var(--detail-burgundy);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 5rem;
+    padding: 0.75rem 3rem;
+    background-color: var(--detail-pink);
+    border-bottom: 1px solid var(--detail-line);
+}
+
+.detail-logo {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 2.5rem;
+    color: var(--detail-burgundy);
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+    text-decoration: none;
+}
+
+.detail-logo span {
+    position: absolute;
+}
+
+.detail-logo span:first-child {
+    top: 0;
+    left: 0;
+}
+
+.detail-logo span:last-child {
+    right: 0;
+    bottom: 0;
+}
+
+
+/* =========================
+   X: TORNA ALLA GALLERIA
+========================= */
+
+.detail-close-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    z-index: 10;
+
+    display: grid;
+    place-items: center;
+
+    width: 2.8rem;
+    height: 2.8rem;
+
+    color: #8e6b8f;
+    border: 2px solid currentColor;
+    border-radius: 0.35rem;
+    background-color: var(--detail-background);
+
+    font-size: 2.35rem;
+    font-weight: 300;
+    line-height: 1;
+    text-decoration: none;
+
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.detail-close-button:hover,
+.detail-close-button:focus-visible {
+    color: var(--detail-burgundy);
+    outline: none;
+    transform: scale(1.08);
+}
+
+.detail-close-button:focus-visible {
+    box-shadow: 0 0 0 3px rgba(93, 24, 57, 0.25);
+}
+
+
+/* =========================
+   CONTENUTO DETTAGLIO
+========================= */
+
+.painting-detail-page {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: calc(100vh - 5rem);
+    padding: 2rem 5rem;
+    overflow: hidden;
+
+    background-color: var(--detail-background);
+    background-image: url("../image/pattern_geometrico.png");
+    background-repeat: repeat;
+    background-size: 28rem;
+}
+
+.painting-detail {
+    display: grid;
+    grid-template-columns: minmax(18rem, 28rem) minmax(14rem, 20rem);
+    align-items: center;
+    gap: clamp(3rem, 9vw, 9rem);
+    width: min(100%, 67rem);
+}
+
+.painting-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35rem;
+}
+
+.painting-detail-image {
+    display: block;
+    width: 100%;
+    max-width: 28rem;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border: 1px solid #8d8586;
+}
+
+.painting-details {
+    width: min(100%, 18rem);
+    justify-self: start;
+}
+
+.painting-label {
+    margin: 0 0 1.5rem;
+    color: #89677e;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.painting-details h1 {
+    margin: 0;
+    color: var(--detail-burgundy);
+    font-family: Georgia, serif;
+    font-size: clamp(1.2rem, 2vw, 1.7rem);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+.painting-separator {
+    width: 100%;
+    height: 1px;
+    margin: 1.25rem 0 1.5rem;
+    background-color: var(--detail-line);
+}
+
+.painting-data {
+    margin: 0;
+}
+
+.painting-data-row {
+    display: grid;
+    gap: 0.45rem;
+    margin-bottom: 1.15rem;
+}
+
+.painting-data dt,
+.painting-data dd {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.painting-data dt {
+    color: #89677e;
+}
+
+.painting-data dd {
+    color: var(--detail-burgundy);
+}
+
+
+/* =========================
+   FRECCE GALLERIA
+========================= */
+
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+
+    color: var(--detail-burgundy);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+
+    transform: translateY(-50%);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-arrow-previous {
+    left: 2.5rem;
+}
+
+.gallery-arrow-next {
+    right: 2.5rem;
+}
+
+.gallery-arrow:hover,
+.gallery-arrow:focus-visible {
+    color: #a85d81;
+    outline: none;
+    transform: translateY(-50%) scale(1.2);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+    .detail-header {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    .painting-detail-page {
+        min-height: auto;
+        padding: 3rem 3.5rem 5rem;
+    }
+
+    .painting-detail {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .painting-image-container {
+        min-height: auto;
+    }
+
+    .painting-detail-image {
+        max-width: 20rem;
+    }
+
+    .painting-details {
+        justify-self: center;
+        width: min(100%, 20rem);
+    }
+
+    .gallery-arrow {
+        font-size: 1.65rem;
+    }
+
+    .gallery-arrow-previous {
+        left: 1rem;
+    }
+
+    .gallery-arrow-next {
+        right: 1rem;
+    }
+
+    .detail-close-button {
+        top: 1rem;
+        right: 1rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 2.1rem;
+    }
+}

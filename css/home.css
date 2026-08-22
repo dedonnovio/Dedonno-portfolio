@@ -1,0 +1,317 @@
+/* =========================================================
+   MAIN / HERO
+========================================================= */
+
+.hero {
+    min-height: 570px;
+
+    /*
+        IMPORTANTISSIMO:
+        50px di spazio esterno
+        intorno ai frame.
+    */
+
+    padding: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #f8e9ef;
+
+    background-image:
+        url("../image/pattern_geometrico.png");
+
+    background-repeat: repeat;
+
+    background-position: center;
+
+    background-size: auto;
+}
+
+
+/* =========================================
+   FRAME 1 — ESTERNO
+========================================= */
+
+.frame-outer {
+    width: 100%;
+    max-width: 900px;
+    padding: 12px;
+    border: 20px solid #fffaf8;
+}
+
+
+/* =========================================
+   FRAME 2 — STRISCIA CENTRALE
+========================================= */
+
+.frame-middle {
+    width: 100%;
+
+    padding: 18px;
+
+    background-color: transparent;
+}
+
+
+/* =========================================
+   FRAME 3 — INTERNO
+========================================= */
+
+.frame-inner {
+    width: 100%;
+
+    min-height: 400px;
+
+    padding: 55px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+    background-color: #fffaf8;
+
+    border: 1px solid #fffaf8;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.intro-image-container {
+    width: 100%;
+}
+
+
+/*
+    Placeholder temporaneo.
+    Verrà sostituito dalla vera immagine.
+*/
+
+.image-placeholder {
+    width: 100%;
+
+    max-width: 300px;
+
+    height: 320px;
+
+    margin: 0 auto;
+
+    background-color: #a6a4a5;
+
+    border-radius: 5px;
+}
+
+
+/*
+    Quando inserirai la vera immagine,
+    questa classe gestirà l'immagine.
+*/
+
+.intro-image {
+    display: block;
+
+    width: 100%;
+
+    max-width: 300px;
+
+    height: 320px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.intro-content {
+    max-width: 440px;
+
+    margin: 0 auto;
+
+    color: #633f53;
+
+    font-size: 0.78rem;
+
+    line-height: 1.65;
+
+    text-align: center;
+}
+
+
+/* Welcome */
+
+.welcome {
+    margin-bottom: 30px;
+
+    color: #70445b;
+
+    font-size: 0.72rem;
+
+    font-weight: 500;
+
+    letter-spacing: 0.04em;
+}
+
+
+/* Main introduction title */
+
+.intro-content h2 {
+    margin-bottom: 20px;
+
+    color: #64213f;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 1rem;
+
+    font-weight: 400;
+
+    font-style: italic;
+
+    line-height: 1.5;
+}
+
+
+/* Paragraphs */
+
+.intro-content p:not(.welcome) {
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   VIEW MY WORK
+========================================================= */
+
+.view-work {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 6px;
+
+    padding: 6px 4px;
+
+    color: #64213f;
+
+    text-decoration: none;
+
+    font-size: 0.75rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.02em;
+
+    border-radius: 2px;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.view-work:hover {
+    color: #43152b;
+
+    transform: translateX(3px);
+}
+
+
+.view-work span:last-child {
+    font-size: 1.4rem;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .hero {
+        padding: 50px 30px;
+    }
+
+
+    .frame-inner {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 45px 35px;
+    }
+
+
+    .intro-content {
+        max-width: 550px;
+    }
+
+
+    .image-placeholder,
+    .intro-image {
+        max-width: 280px;
+
+        height: 300px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE MOBILE
+========================================================= */
+
+@media (max-width: 550px) {
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+
+    .frame-outer {
+        padding: 8px;
+    }
+
+
+    .frame-inner {
+        padding: 35px 20px;
+
+        gap: 35px;
+    }
+
+
+    .image-placeholder,
+    .intro-image {
+        max-width: 100%;
+
+        height: 280px;
+    }
+
+
+    .intro-content {
+        font-size: 0.75rem;
+    }
+}

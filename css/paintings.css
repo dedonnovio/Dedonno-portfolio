@@ -1,0 +1,100 @@
+.paintings-page {
+    padding: 2rem 1.25rem 3rem;
+}
+
+.paintings-intro {
+    max-width: 1100px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.paintings-intro h2 {
+    margin: 0;
+    color: #5d1839;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.paintings-intro p {
+    margin: 0.75rem 0 0;
+    color: #5d1839;
+    font-size: 0.9rem;
+}
+
+.paintings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.75rem 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.painting-card {
+    min-width: 0;
+}
+
+.painting-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.painting-link img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid #5d1839;
+    border-radius: 1.25rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.painting-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    color: #5d1839;
+    font-size: 0.8rem;
+}
+
+.painting-info h3,
+.painting-info p {
+    margin: 0;
+    font: inherit;
+}
+
+.painting-info h3 {
+    font-weight: 500;
+}
+
+.painting-link:hover img,
+.painting-link:focus-visible img {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.65rem 1.25rem rgba(93, 24, 57, 0.2);
+}
+
+.painting-link:focus-visible {
+    outline: 3px solid #5d1839;
+    outline-offset: 0.35rem;
+    border-radius: 1.25rem;
+}
+
+@media (max-width: 700px) {
+    .paintings-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem 0.75rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .paintings-page {
+        padding-inline: 1rem;
+    }
+
+    .paintings-grid {
+        grid-template-columns: 1fr;
+    }
+}
