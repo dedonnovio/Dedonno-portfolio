@@ -119,25 +119,26 @@ body {
 
 .painting-detail {
     display: grid;
-    grid-template-columns: minmax(18rem, 28rem) minmax(14rem, 20rem);
+    grid-template-columns: minmax(18rem, 1fr) minmax(14rem, 20rem);
     align-items: center;
-    gap: clamp(3rem, 9vw, 9rem);
-    width: min(100%, 67rem);
+    gap: clamp(2.5rem, 7vw, 7rem);
+    width: min(100%, 72rem);
 }
 
 .painting-image-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 35rem;
+    min-width: 0;
 }
 
 .painting-detail-image {
     display: block;
-    width: 100%;
-    /*max-width: 28rem;*/
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
+    width: auto;
+    max-width: min(100%, 42rem);
+    max-height: min(68vh, 38rem);
+    height: auto;
+    object-fit: contain;
     border: 1px solid #8d8586;
 }
 
