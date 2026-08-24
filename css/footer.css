@@ -13,16 +13,16 @@
 
     padding: 0 38px;
 
-    background-color: #64213f;
+    background-color: var(--scuro);
 
-    color: #ffffff;
+    color: var(--rosa);
 }
 
 
 /* Copyright */
 
 .copyright {
-    color: #ffffff;
+    color: var(--rosa);
 
     font-size: 0.72rem;
 }
@@ -50,7 +50,7 @@
     align-items: center;
     justify-content: center;
 
-    color: #ffffff;
+    color: var(--rosa);
 
     text-decoration: none;
 

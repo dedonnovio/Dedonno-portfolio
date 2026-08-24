@@ -1,26 +1,47 @@
+:root {
+    --paintings-background: var(--crema);
+    --paintings-burgundy: var(--scuro);
+    --paintings-line: var(--viola);
+    --paintings-pattern: url("../image/pattern_geometrico.png");
+}
+
 .paintings-page {
-    padding: 2rem 1.25rem 3rem;
+    min-height: calc(100vh - 10rem);
+    padding: 4rem clamp(1rem, 3.5vw, 3.75rem) 4rem;
+
+    background-color: var(--paintings-background);
+    background-image: var(--paintings-pattern);
+    background-repeat: repeat;
+    background-size: 31rem;
 }
 
 .paintings-intro {
-    max-width: 1100px;
-    margin: 0 auto 2rem;
+    width: min(100%, 71rem);
+    margin: 0 auto 3rem;
     text-align: center;
+    color: var(--scuro);
 }
 
 .paintings-intro h2 {
     margin: 0;
-    color: #5d1839;
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
-    font-weight: 500;
+
+    color: var(--scuro);
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
 }
 
 .paintings-intro p {
     margin: 0.75rem 0 0;
-    color: #5d1839;
+
+    color: var(--viola);
+    font-family: "Raleway", Arial, sans-serif;
     font-size: 0.9rem;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .paintings-grid {

@@ -1,3 +1,14 @@
+/* =========================
+   COLORI GLOBALI
+========================= */
+
+:root {
+    --viola: #906e98;
+    --scuro: #59213c;
+    --rosa: #fdedf3;
+    --crema: #fff8f5;
+}
+
 /* =========================================================
    RESET
 ========================================================= */
@@ -17,9 +28,9 @@ html {
 body {
     min-height: 100vh;
 
-    background-color: #f8e9ef;
+    background-color: var(--crema);
 
-    color: #64213f;
+    color: var(--scuro);
 
     font-family:
         Arial,
@@ -46,8 +57,8 @@ body {
 
     padding: 12px 18px;
 
-    background-color: #64213f;
-    color: #ffffff;
+    background-color: var(--scuro);
+    color: var(--rosa);
 
     text-decoration: none;
 
@@ -66,7 +77,7 @@ body {
 /* Keyboard focus */
 
 a:focus-visible {
-    outline: 3px solid #64213f;
+    outline: 3px solid var(--scuro);
     outline-offset: 4px;
 }
 

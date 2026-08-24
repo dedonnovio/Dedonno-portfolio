@@ -22,7 +22,7 @@
 
     overflow: hidden;
 
-    background-color: #f8e9ef;
+    background-color: var(--crema);
 
     background-image:
         url("../image/pattern_geometrico.png");

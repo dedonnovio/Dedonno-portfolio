@@ -12,9 +12,9 @@
 
     padding: 0 48px;
 
-    background-color: #fff7f9;
+    background-color: var(--rosa);
 
-    border-bottom: 1px solid #d5b5c3;
+    border-bottom: 1px solid var(--viola);
 }
 
 /* =========================================================
@@ -53,7 +53,7 @@
 
 
 .brand h1 {
-    color: #64213f;
+    color: var(--scuro);
 
     font-family:
         Georgia,
@@ -71,7 +71,7 @@
 .brand p {
     margin-top: 3px;
 
-    color: #70445b;
+    color: var(--viola);
 
     font-size: 0.65rem;
 
@@ -94,7 +94,7 @@
 
 
 .main-navigation a {
-    color: #70445b;
+    color: var(--viola);
 
     text-decoration: none;
 
@@ -111,7 +111,7 @@
 
 
 .main-navigation a:hover {
-    color: #64213f;
+    color: var(--scuro);
 
     transform: translateY(-1px);
 }

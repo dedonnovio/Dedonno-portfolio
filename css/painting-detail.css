@@ -111,10 +111,8 @@ body {
     padding: 2rem 5rem;
     overflow: hidden;
 
-    background-color: var(--detail-background);
-    background-image: url("../image/pattern_geometrico.png");
-    background-repeat: repeat;
-    background-size: 28rem;
+    background-color: var(--crema);
+   
 }
 
 .painting-detail {
