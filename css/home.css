@@ -145,9 +145,10 @@
 
     margin: 0 auto;
 
-    color: #633f53;
-
-    font-size: 0.78rem;
+    color: var(--scuro);
+    font-family:"Raleway";
+    font-style: italic;
+    font-size: 0.75rem;
 
     line-height: 1.65;
 
@@ -160,13 +161,12 @@
 .welcome {
     margin-bottom: 30px;
 
-    color: #70445b;
-
-    font-size: 0.72rem;
-
-    font-weight: 500;
-
-    letter-spacing: 0.04em;
+    color: var(--viola);
+    font-family: "Raleway";
+    font-size: 1rem;
+        font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.02em;
 }
 
 
@@ -175,11 +175,10 @@
 .intro-content h2 {
     margin-bottom: 20px;
 
-    color: #64213f;
+    color: var(--scuro);
 
     font-family:
-        Georgia,
-        "Times New Roman",
+       "Raleway",
         serif;
 
     font-size: 1rem;
@@ -214,9 +213,10 @@
 
     padding: 6px 4px;
 
-    color: #64213f;
+    color: var(--viola);
 
     text-decoration: none;
+    font-family: "Raleway";
 
     font-size: 0.75rem;
 
@@ -233,7 +233,7 @@
 
 
 .view-work:hover {
-    color: #43152b;
+    color: var(--scuro);
 
     transform: translateX(3px);
 }

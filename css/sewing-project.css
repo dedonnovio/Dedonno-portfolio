@@ -32,7 +32,7 @@
 .sewing-intro h2 {
     margin: 0;
     color: var(--scuro);
-    font-family: "Raleway", Arial, sans-serif;
+    font-family: "Raleway";
     font-size: clamp(1.8rem, 4vw, 3rem);
     font-weight: 400;
     font-style: normal;
@@ -43,7 +43,7 @@
 .sewing-intro p {
     margin: 0.75rem 0 0;
     color: var(--viola);
-    font-family: "Raleway", Arial, sans-serif;
+    font-family: "Raleway"; 
     font-size: 0.9rem;
     font-weight: 400;
     font-style: italic;
@@ -430,3 +430,32 @@
     }
 }
 
+/* =========================
+   STRISCE A TUTTA LARGHEZZA
+   DIETRO AI TESTI
+========================= */
+
+.sewing-section-shirt,
+.sewing-section-set,
+.sewing-section-collar {
+    position: relative;
+    isolation: isolate;
+}
+
+/* Una striscia per ogni progetto */
+.sewing-section-shirt::before,
+.sewing-section-set::before,
+.sewing-section-collar::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    top: 15%;
+    height: 20rem;
+
+    left: calc((100vw - 100%) / -2);
+    right: calc((100vw - 100%) / -2);
+
+    background-color: var(--crema);
+}

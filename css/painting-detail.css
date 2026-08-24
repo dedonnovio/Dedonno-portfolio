@@ -3,10 +3,10 @@
 ========================= */
 
 :root {
-    --detail-background: #fcf8f5;
-    --detail-pink: #f8e9ef;
-    --detail-burgundy: #5d1839;
-    --detail-line: #c9afbc;
+    --detail-background: #fff8f5;
+    --detail-pink: #fdedf3;
+    --detail-burgundy: #59213c;
+    --detail-line: #906e98;
     --detail-pattern: rgba(224, 209, 181, 0.38);
 }
 
@@ -74,7 +74,7 @@ body {
     width: 2.8rem;
     height: 2.8rem;
 
-    color: #8e6b8f;
+    color: var(--detail-line);
     border: 2px solid currentColor;
     border-radius: 0.35rem;
     background-color: var(--detail-background);
@@ -147,7 +147,9 @@ body {
 
 .painting-label {
     margin: 0 0 1.5rem;
-    color: #89677e;
+    color: var(--viola);
+    font-family: "Raleway";
+    font-style: normal;
     font-size: 0.7rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -156,7 +158,8 @@ body {
 .painting-details h1 {
     margin: 0;
     color: var(--detail-burgundy);
-    font-family: Georgia, serif;
+    font-family:"Alexandria";
+    font-style: normal;
     font-size: clamp(1.2rem, 2vw, 1.7rem);
     font-weight: 400;
     letter-spacing: 0.08em;
@@ -182,11 +185,13 @@ body {
 .painting-data dt,
 .painting-data dd {
     margin: 0;
-    font-size: 0.8rem;
+    font-family: "raleway";
+    font-style: normal;
+    font-size: 1rem;
 }
 
 .painting-data dt {
-    color: #89677e;
+    color: var(--detail-line);
 }
 
 .painting-data dd {
