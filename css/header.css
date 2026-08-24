@@ -56,13 +56,11 @@
     color: var(--scuro);
 
     font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+       "Noto Serif", Georgia, serif;
 
-    font-size: 1rem;
+    font-size: 1.5rem;
 
-    font-weight: 400;
+    font-weight: 500;
 
     line-height: 1.3;
 }
@@ -73,7 +71,7 @@
 
     color: var(--viola);
 
-    font-size: 0.65rem;
+    font-size: 1rem;
 
     letter-spacing: 0.05em;
 }
