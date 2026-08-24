@@ -76,9 +76,6 @@
 }
 
 .sewing-placeholder,
-.sewing-final-placeholder {
-    background-color: var(--sewing-burgundy);
-}
 
 .sewing-placeholder {
     grid-column: 1;
@@ -87,11 +84,7 @@
     height: 25rem;
 }
 
-.sewing-final-placeholder {
-    width: 25rem;
-    height: 12rem;
-    margin: 3rem auto 0;
-}
+
 
 .sewing-copy {
     color: var(--sewing-burgundy);
@@ -300,11 +293,7 @@
         aspect-ratio: 0.7 / 1;
     }
 
-    .sewing-final-placeholder {
-        width: 65%;
-        height: 8rem;
-        margin-top: 2rem;
-    }
+   
 
     .sewing-divider {
         width: 70%;
