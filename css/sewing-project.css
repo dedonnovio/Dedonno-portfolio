@@ -168,7 +168,18 @@
     max-width: 22rem;
     margin: 0 auto;
 }
+.sewing-project-title {
+    margin: 0 0 0.75rem;
 
+    color: var(--scuro);
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
 .sewing-copy-set {
     grid-column: 2;
     grid-row: 2;
