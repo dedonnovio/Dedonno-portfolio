@@ -67,7 +67,7 @@
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border: 1px solid #5d1839;
+    border: 1px solid var(--scuro);
     border-radius: 1.25rem;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -77,8 +77,11 @@
     justify-content: space-between;
     gap: 0.75rem;
     margin-top: 0.5rem;
-    color: #5d1839;
+    color: var(--scuro);
+     font-family: "Alexandria", sans-serif;
     font-size: 0.8rem;
+    font-weight: 400;
+    
 }
 
 .painting-info h3,
@@ -98,7 +101,7 @@
 }
 
 .painting-link:focus-visible {
-    outline: 3px solid #5d1839;
+    outline: 3px solid var(--scuro);
     outline-offset: 0.35rem;
     border-radius: 1.25rem;
 }

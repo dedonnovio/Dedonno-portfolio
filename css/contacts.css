@@ -3,10 +3,10 @@
 ========================= */
 
 :root {
-    --contacts-background: #fcf8f5;
-    --contacts-pink: #f8e9ef;
-    --contacts-burgundy: #5d1839;
-    --contacts-line: #c9afbc;
+    --contacts-background: #fff8f5;
+    --contacts-pink: #fdedf3;
+    --contacts-burgundy: #59213c;
+    --contacts-line: #906e98;
 }
 
 .contacts-page {
@@ -34,7 +34,7 @@
     padding: 1.5rem;
 
     background-color: var(--contacts-background);
-    border: 1px solid rgba(93, 24, 57, 0.25);
+    border: 1px solid var(--scuro)(93, 24, 57, 0.25);
 }
 
 .contact-profile-image {
@@ -77,9 +77,10 @@
 .contact-content h2 {
     margin: 0;
     color: var(--contacts-burgundy);
+    font-family: "Raleway", sans-serif;
     font-size: 0.55rem;
     font-weight: 400;
-    letter-spacing: 0.12em;
+    font-style: normal;
     text-align: center;
     text-transform: uppercase;
 }
@@ -102,8 +103,13 @@
     display: flex;
     align-items: center;
     gap: 0.6rem;
+
     color: var(--contacts-burgundy);
+    font-family: "Raleway", sans-serif;
     font-size: 0.52rem;
+    font-weight: 400;
+    font-style: normal;
+
     text-decoration: none;
 }
 
