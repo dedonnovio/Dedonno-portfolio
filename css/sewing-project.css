@@ -479,3 +479,39 @@
     height: 16rem;
     transform: translateY(-50%);
 }
+/* =========================
+   STRISCE RESPONSIVE: TABLET
+========================= */
+
+@media (max-width: 900px) {
+    .sewing-section-shirt::before {
+        height: 10rem;
+    }
+
+    .sewing-section-set::before {
+        height: 12rem;
+    }
+
+    .sewing-section-collar::before {
+        height: 13rem;
+    }
+}
+
+
+/* =========================
+   STRISCE RESPONSIVE: TELEFONO
+========================= */
+
+@media (max-width: 600px) {
+    .sewing-section-shirt::before {
+        height: 16rem;
+    }
+
+    .sewing-section-set::before {
+        height: 16rem;
+    }
+
+    .sewing-section-collar::before {
+        height: 16rem;
+    }
+}
