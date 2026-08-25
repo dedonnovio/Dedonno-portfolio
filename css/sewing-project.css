@@ -442,7 +442,6 @@
     isolation: isolate;
 }
 
-/* Una striscia per ogni progetto */
 .sewing-section-shirt::before,
 .sewing-section-set::before,
 .sewing-section-collar::before {
@@ -451,11 +450,32 @@
     position: absolute;
     z-index: -1;
 
-    top: 15%;
-    height: 20rem;
+    top: 0;
+    bottom: 0;
 
     left: calc((100vw - 100%) / -2);
     right: calc((100vw - 100%) / -2);
 
     background-color: var(--crema);
+}
+/* Strisce meno alte: dimensionate in base ai testi */
+.sewing-section-shirt::before {
+    top: 30%;
+    bottom: auto;
+    height: 16rem;
+    transform: translateY(-50%);
+}
+
+.sewing-section-set::before {
+    top: 42%;
+    bottom: auto;
+    height: 16rem;
+    transform: translateY(-50%);
+}
+
+.sewing-section-collar::before {
+    top: 50%;
+    bottom: auto;
+    height: 16rem;
+    transform: translateY(-50%);
 }
