@@ -25,58 +25,78 @@
     background-color: var(--contacts-pink);
 }
 
+/* =========================
+   IMMAGINE CONTATTI
+========================= */
+
 .contact-image-area {
-    display: grid;
-    place-items: center;
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
     width: 100%;
     height: 16rem;
-    padding: 1.5rem;
+    padding: 0;
 
-    background-color: var(--contacts-background);
-    border: 1px solid var(--scuro)(93, 24, 57, 0.25);
+    overflow: hidden;
+    background-color: #59213C;
+    border: none;
 }
 
+/* Cerchio chiaro dietro alla persona */
+.contact-image-area::before {
+    content: "";
+
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    z-index: 0;
+
+    width: 13rem;
+    height: 13rem;
+
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+    background-color: #FDEDF3;
+}
+
+/* Immagine PNG della persona */
 .contact-profile-image {
+    position: relative;
+    z-index: 1;
+
     display: block;
 
-    width: min(100%, 10rem);
-    max-height: 11rem;
-    height: auto;
+    width: min(110%, 18rem);
+    max-height: none;
+    height: 110%;
 
     object-fit: contain;
+    object-position: center bottom;
 }
 
+/* Questa parte non serve più se hai eliminato il logo dal tuo HTML */
 .contact-logo {
-    position: relative;
-    width: 8rem;
-    height: 6rem;
-    color: var(--contacts-background);
-    font-family: Georgia, serif;
-    font-size: 4.5rem;
+    display: none;
 }
 
-.contact-logo span {
-    position: absolute;
-}
 
-.contact-logo span:first-child {
-    top: 0;
-    left: 0;
-}
-
-.contact-logo span:last-child {
-    right: 0;
-    bottom: 0;
-}
+/* =========================
+   CONTENUTO CONTATTI
+========================= */
 
 .contact-content {
     padding: 0.65rem 0.8rem 1rem;
+    background-color: #FDEDF3;
 }
 
 .contact-content h2 {
     margin: 0;
-    color: var(--contacts-burgundy);
+
+    color: #59213C;
     font-family: "Raleway", sans-serif;
     font-size: 0.55rem;
     font-weight: 400;
@@ -88,14 +108,16 @@
 .contact-line {
     height: 1px;
     margin: 0.5rem 0 0.65rem;
-    background-color: var(--contacts-line);
+    background-color: #59213C;
 }
 
 .contact-list {
     display: grid;
     gap: 0.5rem;
+
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
@@ -104,7 +126,7 @@
     align-items: center;
     gap: 0.6rem;
 
-    color: var(--contacts-burgundy);
+    color: #59213C;
     font-family: "Raleway", sans-serif;
     font-size: 0.52rem;
     font-weight: 400;
@@ -120,8 +142,10 @@
 
 .contact-link svg {
     flex: 0 0 auto;
+
     width: 0.85rem;
     height: 0.85rem;
+
     fill: none;
     stroke: currentColor;
     stroke-linecap: round;
