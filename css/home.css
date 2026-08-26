@@ -94,10 +94,12 @@
 }
 
 
-/*
-    Placeholder temporaneo.
-    Verrà sostituito dalla vera immagine.
-*/
+.intro-image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .image-placeholder {
     width: 100%;
