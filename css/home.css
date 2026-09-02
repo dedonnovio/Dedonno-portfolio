@@ -43,7 +43,7 @@
     width: 100%;
     max-width: 900px;
     padding: 12px;
-    border: 20px solid #fffaf8;
+    border: 20px solid var(--rosa);
 }
 
 
@@ -79,9 +79,9 @@
 
     align-items: center;
 
-    background-color: #fffaf8;
+    background-color: var(--rosa);
 
-    border: 1px solid #fffaf8;
+    border: 1px solid var(--rosa);
 }
 
 
